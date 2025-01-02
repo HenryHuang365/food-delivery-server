@@ -42,7 +42,8 @@ export default defineType({
     {
       name: 'rating',
       type: 'number',
-      title: 'Enter a number between 1 to 5',
+      title: 'Rating',
+      description: 'Enter a value between 1 and 5',
       validation: (rule) =>
         rule.required().min(1).max(5).error('Please enter a value between 1 and 5'),
     },
